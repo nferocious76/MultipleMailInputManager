@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F537B13E1C7F366B00155E24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537B13D1C7F366B00155E24 /* AppDelegate.swift */; };
+		F537B1401C7F366B00155E24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537B13F1C7F366B00155E24 /* ViewController.swift */; };
+		F537B1431C7F366B00155E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F537B1411C7F366B00155E24 /* Main.storyboard */; };
+		F537B1451C7F366B00155E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F537B1441C7F366B00155E24 /* Assets.xcassets */; };
+		F537B1481C7F366B00155E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F537B1461C7F366B00155E24 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F537B13A1C7F366B00155E24 /* MultipleMailInputManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleMailInputManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F537B13D1C7F366B00155E24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F537B13F1C7F366B00155E24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F537B1421C7F366B00155E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F537B1441C7F366B00155E24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F537B1471C7F366B00155E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F537B1491C7F366B00155E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F537B1371C7F366B00155E24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F537B1311C7F366B00155E24 = {
+			isa = PBXGroup;
+			children = (
+				F537B13C1C7F366B00155E24 /* MultipleMailInputManager */,
+				F537B13B1C7F366B00155E24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F537B13B1C7F366B00155E24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F537B13A1C7F366B00155E24 /* MultipleMailInputManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F537B13C1C7F366B00155E24 /* MultipleMailInputManager */ = {
+			isa = PBXGroup;
+			children = (
+				F537B13D1C7F366B00155E24 /* AppDelegate.swift */,
+				F537B13F1C7F366B00155E24 /* ViewController.swift */,
+				F537B1411C7F366B00155E24 /* Main.storyboard */,
+				F537B1441C7F366B00155E24 /* Assets.xcassets */,
+				F537B1461C7F366B00155E24 /* LaunchScreen.storyboard */,
+				F537B1491C7F366B00155E24 /* Info.plist */,
+			);
+			path = MultipleMailInputManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F537B1391C7F366B00155E24 /* MultipleMailInputManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F537B14C1C7F366B00155E24 /* Build configuration list for PBXNativeTarget "MultipleMailInputManager" */;
+			buildPhases = (
+				F537B1361C7F366B00155E24 /* Sources */,
+				F537B1371C7F366B00155E24 /* Frameworks */,
+				F537B1381C7F366B00155E24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultipleMailInputManager;
+			productName = MultipleMailInputManager;
+			productReference = F537B13A1C7F366B00155E24 /* MultipleMailInputManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F537B1321C7F366B00155E24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = NFerocious;
+				TargetAttributes = {
+					F537B1391C7F366B00155E24 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = RKF34AM7UT;
+					};
+				};
+			};
+			buildConfigurationList = F537B1351C7F366B00155E24 /* Build configuration list for PBXProject "MultipleMailInputManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F537B1311C7F366B00155E24;
+			productRefGroup = F537B13B1C7F366B00155E24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F537B1391C7F366B00155E24 /* MultipleMailInputManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F537B1381C7F366B00155E24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F537B1481C7F366B00155E24 /* LaunchScreen.storyboard in Resources */,
+				F537B1451C7F366B00155E24 /* Assets.xcassets in Resources */,
+				F537B1431C7F366B00155E24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F537B1361C7F366B00155E24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F537B1401C7F366B00155E24 /* ViewController.swift in Sources */,
+				F537B13E1C7F366B00155E24 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F537B1411C7F366B00155E24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F537B1421C7F366B00155E24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F537B1461C7F366B00155E24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F537B1471C7F366B00155E24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F537B14A1C7F366B00155E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F537B14B1C7F366B00155E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F537B14D1C7F366B00155E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MultipleMailInputManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NFerocious.MultipleMailInputManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F537B14E1C7F366B00155E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MultipleMailInputManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NFerocious.MultipleMailInputManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F537B1351C7F366B00155E24 /* Build configuration list for PBXProject "MultipleMailInputManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F537B14A1C7F366B00155E24 /* Debug */,
+				F537B14B1C7F366B00155E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F537B14C1C7F366B00155E24 /* Build configuration list for PBXNativeTarget "MultipleMailInputManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F537B14D1C7F366B00155E24 /* Debug */,
+				F537B14E1C7F366B00155E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F537B1321C7F366B00155E24 /* Project object */;
+}

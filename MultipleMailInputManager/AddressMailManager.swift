@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+protocol AddressMailManagerReceiverDelegate: NSObjectProtocol {
+    
+    func willAddEmailAddress(manager: AddressMailManager)
+    func willRemoveEmailAddress(manager: AddressMailManager)
+    func didReloadEmailAddressData(manager: AddressMailManager)
+}
+
 protocol AddressMailManagerDelegate: NSObjectProtocol {
     
     func willAddEmailAddressFromAddressInputCell(addressInput: AddressInputCell, emailAddress: String?)
@@ -36,6 +43,14 @@ class AddressMailManager: NSObject, UITableViewDelegate, UITableViewDataSource, 
         super.init()
     }
     
+    weak var delegate: AddressMailManagerReceiverDelegate!
+    
+    convenience init(tableView: UITableView, addressMailManagerDelegate: AddressMailManagerReceiverDelegate) {
+        self.init(tableView: tableView)
+        
+        delegate = addressMailManagerDelegate
+    }
+    
     convenience init(tableView: UITableView) {
         self.init()
         
@@ -44,6 +59,9 @@ class AddressMailManager: NSObject, UITableViewDelegate, UITableViewDataSource, 
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .None
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = defaultCellHeight
         
         let addressLabelNib = UINib(nibName: "AddressLabelCell", bundle: nil)
         tableView.registerNib(addressLabelNib, forCellReuseIdentifier: "AddressLabelCell")
@@ -61,6 +79,8 @@ class AddressMailManager: NSObject, UITableViewDelegate, UITableViewDataSource, 
     
     func reloadAddressData() {
         tableView.reloadData()
+        
+        delegate?.didReloadEmailAddressData(self)
     }
     
     // MARK: - Table Delegates
@@ -104,14 +124,18 @@ class AddressMailManager: NSObject, UITableViewDelegate, UITableViewDataSource, 
         
         print("Will add email address: \(emailAddress)")
 
-        if !emailAddresses.contains(emailAddress) {
+        if !emailAddresses.contains(emailAddress) && isValidEmail(emailAddress) {
             emailAddresses.append(emailAddress)
+            
+            delegate?.willAddEmailAddress(self)
             
             if let indexPath = tableView.indexPathForCell(addressInput) {
                 tableView.beginUpdates()
                 tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                 tableView.endUpdates()
             }
+        }else{
+            print("'\(emailAddress) is not a valid email address.")
         }
     }
 
@@ -125,12 +149,25 @@ class AddressMailManager: NSObject, UITableViewDelegate, UITableViewDataSource, 
         if let idx = emailAddresses.indexOf(emailAddress) {
             emailAddresses.removeAtIndex(idx)
         }
+        
+        delegate?.willRemoveEmailAddress(self)
 
         if let indexPath = tableView.indexPathForCell(addressLabel) {
             tableView.beginUpdates()
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             tableView.endUpdates()
         }
+    }
+    
+    // MARK: - Helpers
+    func isValidEmail(testStr:String) -> Bool {
+        
+        let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        
+        return emailTest.evaluateWithObject(testStr)
+        
     }
 
 }

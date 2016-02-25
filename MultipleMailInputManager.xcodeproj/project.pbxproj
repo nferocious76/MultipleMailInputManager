@@ -12,6 +12,11 @@
 		F537B1431C7F366B00155E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F537B1411C7F366B00155E24 /* Main.storyboard */; };
 		F537B1451C7F366B00155E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F537B1441C7F366B00155E24 /* Assets.xcassets */; };
 		F537B1481C7F366B00155E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F537B1461C7F366B00155E24 /* LaunchScreen.storyboard */; };
+		F537B1551C7F36B500155E24 /* AddressMailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537B1501C7F36B500155E24 /* AddressMailManager.swift */; };
+		F537B1561C7F36B500155E24 /* AddressLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537B1511C7F36B500155E24 /* AddressLabelCell.swift */; };
+		F537B1571C7F36B500155E24 /* AddressLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F537B1521C7F36B500155E24 /* AddressLabelCell.xib */; };
+		F537B1581C7F36B500155E24 /* AddressInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537B1531C7F36B500155E24 /* AddressInputCell.swift */; };
+		F537B1591C7F36B500155E24 /* AddressInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F537B1541C7F36B500155E24 /* AddressInputCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F537B1441C7F366B00155E24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F537B1471C7F366B00155E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F537B1491C7F366B00155E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F537B1501C7F36B500155E24 /* AddressMailManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressMailManager.swift; sourceTree = "<group>"; };
+		F537B1511C7F36B500155E24 /* AddressLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressLabelCell.swift; sourceTree = "<group>"; };
+		F537B1521C7F36B500155E24 /* AddressLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressLabelCell.xib; sourceTree = "<group>"; };
+		F537B1531C7F36B500155E24 /* AddressInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressInputCell.swift; sourceTree = "<group>"; };
+		F537B1541C7F36B500155E24 /* AddressInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressInputCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,25 @@
 			children = (
 				F537B13D1C7F366B00155E24 /* AppDelegate.swift */,
 				F537B13F1C7F366B00155E24 /* ViewController.swift */,
+				F537B14F1C7F36A900155E24 /* MailAddressManager */,
 				F537B1411C7F366B00155E24 /* Main.storyboard */,
 				F537B1441C7F366B00155E24 /* Assets.xcassets */,
 				F537B1461C7F366B00155E24 /* LaunchScreen.storyboard */,
 				F537B1491C7F366B00155E24 /* Info.plist */,
 			);
 			path = MultipleMailInputManager;
+			sourceTree = "<group>";
+		};
+		F537B14F1C7F36A900155E24 /* MailAddressManager */ = {
+			isa = PBXGroup;
+			children = (
+				F537B1501C7F36B500155E24 /* AddressMailManager.swift */,
+				F537B1511C7F36B500155E24 /* AddressLabelCell.swift */,
+				F537B1521C7F36B500155E24 /* AddressLabelCell.xib */,
+				F537B1531C7F36B500155E24 /* AddressInputCell.swift */,
+				F537B1541C7F36B500155E24 /* AddressInputCell.xib */,
+			);
+			name = MailAddressManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F537B1591C7F36B500155E24 /* AddressInputCell.xib in Resources */,
 				F537B1481C7F366B00155E24 /* LaunchScreen.storyboard in Resources */,
 				F537B1451C7F366B00155E24 /* Assets.xcassets in Resources */,
 				F537B1431C7F366B00155E24 /* Main.storyboard in Resources */,
+				F537B1571C7F36B500155E24 /* AddressLabelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F537B1401C7F366B00155E24 /* ViewController.swift in Sources */,
+				F537B1551C7F36B500155E24 /* AddressMailManager.swift in Sources */,
+				F537B1581C7F36B500155E24 /* AddressInputCell.swift in Sources */,
 				F537B13E1C7F366B00155E24 /* AppDelegate.swift in Sources */,
+				F537B1561C7F36B500155E24 /* AddressLabelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
